@@ -1,9 +1,9 @@
-import React from 'react'
+import styled from 'styled-components'
 
-function Label(props) {
-    return (
-        <label>{props.children}</label>
-    )
-}
+const Label = styled.label`
+  text-transform: uppercase;
+  color: black;
+  font-size: 10px;
+`
 
 export default Label 
