@@ -1,3 +1,6 @@
+export { dark as theme } from 'mdx-deck/themes'
+import SiteSearch from '../src/molecules/site-search.js'
+
 # Atomic Design
 #### A Micro Project
 ###### By: Brent M Clark
@@ -5,8 +8,79 @@
 ---
 
 # But First, About Me
-I'm Brent M Clark
-👋
+I'm Brent M. Clark 👋
+
+I have credentials.  They are boring; we can move on.
+
+---
+
+# What's Atomic Design?
+
+> "a methodology to craft interface design systems"
+
+> -- Brad Frost
+
+---
+
+🤔 OK cool.  How do you do that?
+
+---
+
+## Atomic Design Borrows From Chemistry
+by using names that we can all understand.
+
+<img src="http://atomicdesign.bradfrost.com/images/content/atomic-design-process.png" width="800" />
+
+---
+
+That's great! I'm bored; can we _do_ something?
+
+Heck yes we can.
+
+---
+
+Making a site search component, the atomic way.
+<div style={{
+  background: '#EEE5E5',
+  padding: '36px 24px',
+  border: '1px solid #DDCECD',
+  width: '400px',
+  display: 'flex',
+  alignItems: 'center',
+  margin: '0 auto',
+  fontSize: '16px',
+}}>
+    <SiteSearch />
+</div>
+
+☝️The goal.
+
+---
+
+
+
+<button
+    onClick={e => {
+        document.getElementById('here-we-go').style.display = 'block'
+        e.target.style.display = 'none'
+    }}
+    style={{
+        padding: '12px 24px',
+        fontWeight: 'bold',
+        fontSize: '24px',
+        textTransform: 'uppercase',
+        background: '#28AFB0',
+        border: 'none',
+        borderRadius: '6px',
+    }}
+>
+    Click here when you're ready
+</button>
+<img 
+    id="here-we-go"
+    style={{display: 'none'}}
+    src="http://www.quickmeme.com/img/9e/9eb60ca2e5ffbb650729dbcff312af1579c24587cfeaf8b9c2d4ba4eb59b54e6.jpg"
+/>
 
 ---
 
@@ -17,7 +91,3 @@ I'm Brent M Clark
 ---
 
 # The end
-
----
-
-# Just Kidding, there's more.
