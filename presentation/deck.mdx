@@ -1,5 +1,9 @@
 export { dark as theme } from 'mdx-deck/themes'
 import SiteSearch from '../src/molecules/site-search.js'
+import Button from '../src/atoms/button'
+import Input from '../src/atoms/input'
+import Label from '../src/atoms/label'
+import Underlay from './Underlay'
 
 # Atomic Design
 #### A Micro Project
@@ -98,24 +102,13 @@ by using names that we can all understand.
 ---
 
 Making a site search component, the atomic way.
-<div style={{
-  background: '#EEE5E5',
-  padding: '36px 24px',
-  border: '1px solid #DDCECD',
-  width: '400px',
-  display: 'flex',
-  alignItems: 'center',
-  margin: '0 auto',
-  fontSize: '16px',
-}}>
+<Underlay>
     <SiteSearch />
-</div>
+</Underlay>
 
 ☝️The goal.
 
 ---
-
-
 
 <button
     onClick={e => {
@@ -142,9 +135,53 @@ Making a site search component, the atomic way.
 
 ---
 
-```jsx
-<CodeSnippet />
-```
+# The `Button` Atom
+<Underlay style={{transform: 'scale(2.0)'}}>
+  <Button>Search</Button>
+</Underlay>
+
+---
+
+# The Code
+<img src="https://mp-presentations.s3-us-west-2.amazonaws.com/mp-atomic-design/button-code.png" width="600" />
+
+---
+
+# The `Label` Atom
+<Underlay style={{transform: 'scale(2.0)'}}>
+  <Label>Search The Site</Label>
+</Underlay>
+
+---
+
+# The Code
+<img src="https://mp-presentations.s3-us-west-2.amazonaws.com/mp-atomic-design/label-code.png" width="600" />
+
+---
+
+# The `Input` Atom
+<Underlay style={{transform: 'scale(2.0)'}}>
+  <Input type="text" placeholder="Enter Keyword" />
+</Underlay>
+
+---
+
+# The Code
+<img src="https://mp-presentations.s3-us-west-2.amazonaws.com/mp-atomic-design/input-code.png" width="600" />
+
+---
+
+# The `SiteSearch` Molecule
+<br />
+<Underlay style={{transform: 'scale(2.0)'}}>
+  <SiteSearch />
+</Underlay>
+
+---
+<div style={{display: 'flex', alignItems: 'center'}}>
+<h1 style={{margin: '0 24px 0 0'}}>The Code</h1>
+<img src="https://mp-presentations.s3-us-west-2.amazonaws.com/mp-atomic-design/site-search-code.png" width="700" />
+</div>
 
 ---
 
