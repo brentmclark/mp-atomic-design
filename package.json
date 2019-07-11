@@ -13,6 +13,7 @@
     "start": "react-scripts start",
     "start:presentation": "mdx-deck presentation/deck.mdx",
     "build": "react-scripts build",
+    "build:presentation": "mdx-deck build presentation/deck.mdx",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
