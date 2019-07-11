@@ -11,10 +11,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:presentation": "mdx-deck presentation/deck.mdx",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "presentation:start": "mdx-deck presentation/deck.mdx"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
