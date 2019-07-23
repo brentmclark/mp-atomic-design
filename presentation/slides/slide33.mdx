@@ -1,0 +1,44 @@
+import Layout from './Layout'
+import { FullScreenCode } from 'mdx-deck/layouts'
+
+
+<FullScreenCode>
+
+``` jsx
+import Button from '../atoms/button'
+import Label from '../atoms/label'
+import Input from '../atoms/input'
+
+function SiteSearch(props) {
+    return (
+        <Form
+            onSubmit={event => {
+                event.preventDefault();
+                const searchTerm = event.target.elements[0].value
+                alert('Searching for' + searchTerm)
+            }}
+        >
+            <Label>Search The Site</Label>
+            <div>
+                <Input type="text" placeholder="Enter Keyword" />
+                <Buttontype="submit">Search</Button>
+            </div>
+        </Form>
+    )
+}
+
+const Form = styled.form`
+    text-align: left;
+
+    label {
+        margin: 0 0 4px;
+        display: inline-block;
+    }
+
+    input {
+        margin: 0 4px 0 0;
+    }
+`
+
+```
+</FullScreenCode>

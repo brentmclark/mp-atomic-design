@@ -11,9 +11,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:presentation": "mdx-deck presentation/deck.mdx",
+    "start:presentation": "mdx-deck presentation/deck.js",
     "build": "react-scripts build",
-    "build:presentation": "mdx-deck build presentation/deck.mdx",
+    "build:presentation": "mdx-deck build presentation/deck.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
