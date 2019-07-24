@@ -21,9 +21,9 @@ const Wrapper = styled.li`
 `
 
 function NavLink(props) {
-    const { children, className, ...rest} = props
+    const { children, ...rest} = props
     return (
-        <Wrapper className={className}>
+        <Wrapper>
             <a {...rest}>{children}</a>
         </Wrapper>
     )

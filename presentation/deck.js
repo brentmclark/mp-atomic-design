@@ -6,7 +6,7 @@ import { slides as slide1 } from './slides/slide1.mdx'
 import { slides as slide2 } from './slides/slide2.mdx'
 import { slides as slide3 } from './slides/slide3.mdx'
 import { slides as slide4 } from './slides/slide4.mdx'
-import { slides as slide5 } from './slides/slide5.mdx'
+// import { slides as slide5 } from './slides/slide5.mdx'
 import { slides as slide6 } from './slides/slide6.mdx'
 import { slides as slide7 } from './slides/slide7.mdx'
 import { slides as slide8 } from './slides/slide8.mdx'
@@ -15,7 +15,7 @@ import { slides as slide10 } from './slides/slide10.mdx'
 import { slides as slide11 } from './slides/slide11.mdx'
 import { slides as slide12 } from './slides/slide12.mdx'
 import { slides as slide13 } from './slides/slide13.mdx'
-import { slides as slide14 } from './slides/slide14.mdx'
+// import { slides as slide14 } from './slides/slide14.mdx'
 import { slides as slide15 } from './slides/slide15.mdx'
 import { slides as slide16 } from './slides/slide16.mdx'
 import { slides as slide17 } from './slides/slide17.mdx'
@@ -39,6 +39,9 @@ import { slides as slide34 } from './slides/slide34.mdx'
 import { slides as slide35 } from './slides/slide35.mdx'
 import { slides as slide36 } from './slides/slide36.mdx'
 import { slides as slide37 } from './slides/slide37.mdx'
+import { slides as questions } from './slides/questions.mdx'
+import { slides as thanks } from './slides/thanks.mdx'
+
 
 export const themes = [
   future,
@@ -56,7 +59,7 @@ export const slides = [
     ...slide2,
     ...slide3,
     ...slide4,
-    ...slide5,
+    // ...slide5,
     ...slide6,
     ...slide7,
     ...slide8,
@@ -65,7 +68,7 @@ export const slides = [
     ...slide11,
     ...slide12,
     ...slide13,
-    ...slide14,
+    // ...slide14,
     ...slide15,
     ...slide16,
     ...slide17,
@@ -89,4 +92,6 @@ export const slides = [
     ...slide35,
     ...slide36,
     ...slide37,
+    ...thanks,
+    ...questions,
 ]
